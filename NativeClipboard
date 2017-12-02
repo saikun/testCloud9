@@ -1,4 +1,11 @@
+memo
+
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
 git pull https://github.com/saikun/testCloud9.git master
 
+
+in .git config
+
+[alias]
+    cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
