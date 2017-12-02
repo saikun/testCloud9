@@ -1,5 +1,8 @@
 memo
+//memo
+Usage: git cmp "Long commit message goes here"
 
+//config git
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
 
@@ -7,9 +10,4 @@ git config credential.helper store
 
 git pull https://github.com/saikun/testCloud9.git master
 
-in .git config
-
-[alias]
-    cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
-
-usage
+git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
